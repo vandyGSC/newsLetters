@@ -10,22 +10,31 @@
 <!-- A gmail specific style block.  -->
 <style>
 
-.FAQ {
-    display : block;
-    margin: 0px 0px 0px 20px;
-    vertical-align: top;
-    height:auto !important;
-}
-.list {
+
+/*Start lang selection block*/
+
+[lang~="list"]{
     display:none;
     height:auto;
     margin:0;
     float: left;
 }
+
+[lang~="list"] p{
+    height:auto;
+    margin:0;
+}
+
+[lang~="FAQ"] {
+    display : block;
+    margin: 0px 0px 0px 20px;
+    vertical-align: top;
+    height:auto !important;
+}
 [lang~="show"] {
     display: none;
 }
-[lang~="hide"]:target + [lang~="show"]{
+[lang~="hide"]`:target + [lang~="show"]{
     display: inline;
 }
 [lang~="hide"]:target {
@@ -57,10 +66,82 @@
 	margin-bottom: 25px;
 }
 
+[lang~="question"] {
+	float: left;
+	height: auto;
+	line-height: 20px;
+	margin-bottom: 25px;
+}
+
+[lang~="imageText"] {
+  color: white;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1px;
+}
+
+
+/*End lang selector version selection css*/
+
+
+
+/*The class version selection css*/
+
+.list {
+    display:none;
+    height:auto;
+    margin:0;
+    float: left;
+}
+
+
 .list p{
     height:auto;
     margin:0;
 }
+
+.FAQ {
+    display : block;
+    margin: 0px 0px 0px 20px;
+    vertical-align: top;
+    height:auto !important;
+}
+
+.show {
+    display: none;
+}
+.hide:target + .show{
+    display: inline;
+}
+.hide:target {
+    display: none;
+}
+.hide:target ~ .list {
+    display:inline;
+}
+
+.show, .hide {
+    height: auto;
+    width: 90%;
+    line-height: 20px;
+    margin-bottom: 25px;
+    margin-top: -17px;
+	border-radius: 30px;
+	text-decoration: none;
+	margin-right: 0;
+	float: left;
+	margin-bottom: 25px;
+    opacity: 80%;
+    font-style:italic;
+    margin-left: auto !important;
+}
+
+.hide:hover, .show:hover {
+	text-decoration: none;
+	opacity: 1;
+	margin-bottom: 25px;
+}
+
 .question {
 	float: left;
 	height: auto;
@@ -74,11 +155,14 @@
   background: rgba(0, 0, 0, 0.4);
   padding: 1px;
 }
+/*End class version selection css*/
+
 
 hr {
     width: 20%;
     opacity: 0.4;
 }
+
 </style>
 
     <title></title>
@@ -127,7 +211,7 @@ body{background-color:#fff}.mso h1{}.mso h1{font-family:Tahoma,sans-serif !impor
     </div>
 
             <div style="Margin-left: 20px;Margin-right: 20px;">
-      <h2 class="size-28" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #58595b;font-size: 24px;line-height: 32px;font-family: Roboto,Tahoma,sans-serif;text-align: center;" lang="x-size-28"><span class = "imageText" style="color:#ffffff"><strong>General Body Meeting</strong></span></h2><p style="Margin-top: 16px;Margin-bottom: 20px;text-align: center;"><span  class = "imageText"  style="color:#ffffff"><strong>Alumni Hall room 201<br />
+      <h2 class="size-28" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #58595b;font-size: 24px;line-height: 32px;font-family: Roboto,Tahoma,sans-serif;text-align: center;" lang="x-size-28"><span class = "imageText" lang="imageText"  style="color:#ffffff"><strong>General Body Meeting</strong></span></h2><p style="Margin-top: 16px;Margin-bottom: 20px;text-align: center;"><span  class = "imageText" lang="imageText"   style="color:#ffffff"><strong>Alumni Hall room 201<br />
 November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
     </div>
 
@@ -181,9 +265,9 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
 
 
 
-  <div class='FAQ'>
+  <div class='FAQ' lang="FAQ" >
 
-    <div class="question">
+    <div class="question"lang="question" >
         <p>
          We have 6 tickets left for the show this Friday! Purchase them <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b86728 ;" href = "https://vanderbilt.irisregistration.com/Form/Councilevents">here.</a>
         </p>
@@ -192,9 +276,9 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
             <a href="#rentTickets_hide" class="hide" lang="hide" lang="hide"id="rentTickets_hide" style="margin-left:-9999px;">Read more...</a>
             <a href="#rentTickets_show" class="show" lang="show"  id="rentTickets_show" style="margin-left:-9999px;">Hide</a>
 
-        <div class="list">
+        <div class="list" lang="list" >
 
-        <p>
+        <p lang="listP">
             GSC has a block of reduced-price tickets for Rent on <i>October 21st</i> at 8PM.  Tickets are $15 each for seats located in the Left Loge Middle (G-N) section. We are selling these on a first-come first-served basis (limited to 2 per graduate student). Purchase your tickets here (<a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b86728 ;" href="https://vanderbilt.irisregistration.com/Form/Councilevents">Rent Tickets</a>)!  </p>
         </div>
 
@@ -236,10 +320,10 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
 
 
 
-  <div class='FAQ'>
+  <div class='FAQ' lang="FAQ" >
 
-    <div class="question">
-        <p>
+    <div class="question"lang="question" >
+        <p lang="listP">
             October 22nd 4:30-6:30pm <br>
         </p>
     </div>
@@ -247,7 +331,7 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
             <a href="#tailgate_hide" class="hide" lang="hide" lang="hide"id="tailgate_hide" style="margin-left:-9999px;">Read more...</a>
             <a href="#tailgate_show" class="show" lang="show"  id="tailgate_show" style="margin-left:-9999px;">Hide</a>
 
-        <div class="list">
+        <div class="list" lang="list" >
 
         <p>
             Join us for free food and drinks at the Vanderbilt vs. Tennessee State University Tailgate!
@@ -291,9 +375,9 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
 
 
 
-  <div class='FAQ'>
+  <div class='FAQ' lang="FAQ" >
 
-    <div class="question">
+    <div class="question"lang="question" >
         <p>
           Join us on October 28th 9pm-Midnight for the Halloween social for great music, food, and drinks! Show off your Halloween spirit by dressing up!
         </p>
@@ -302,7 +386,7 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
             <a href="#halloween_hide" class="hide" lang="hide" id="halloween_hide" style="margin-left:-9999px;">Read more...</a>
             <a href="#halloween_show" class="show" lang="show"  id="halloween_show" style="margin-left:-9999px;">Hide</a>
 
-        <div class="list">
+        <div class="list" lang="list" >
 
         <p>
             <strong>When:</strong> Friday, October 28th 9pm-Midnight
@@ -349,18 +433,18 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
 
 
 
-  <div class='FAQ'>
+  <div class='FAQ' lang="FAQ" >
 
-    <div class="question">
+    <div class="question"lang="question" >
         <p>
-          Tell your Story: November 2 5:30-8pm (dinner provided, RSVP <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b86728 ;" href="https://goo.gl/forms/nukP2nIByXx49XRI2">here</a>) 
+          Tell your Story: November 2 5:30-8pm (dinner provided, RSVP <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b86728 ;" href="https://goo.gl/forms/nukP2nIByXx49XRI2">here</a>)
         </p>
     </div>
 <!--                Make sure you change these V ids to fit each section! -->
             <a href="#storyTeller_hide" class="hide" lang="hide" id="storyTeller_hide" style="margin-left:-9999px;">Read more...</a>
             <a href="#storyTeller_show" class="show" lang="show"  id="storyTeller_show" style="margin-left:-9999px;">Hide</a>
 
-        <div class="list">
+        <div class="list" lang="list" >
 
         <p>
             Learn the fundamentals of storytelling to take individual experiences and create compelling stories for any audience. Dinner will be provided. We have limited spots, RSVP <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b86728 ;" href="https://goo.gl/forms/nukP2nIByXx49XRI2">here</a>.
@@ -408,9 +492,9 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
 
 
 
-  <div class='FAQ'>
+  <div class='FAQ' lang="FAQ" >
 
-    <div class="question">
+    <div class="question"lang="question" >
         <p>
           November 7th
         </p>
@@ -419,7 +503,7 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
             <a href="#travelAwards_hide" class="hide" lang="hide" id="travelAwards_hide" style="margin-left:-9999px;">Read more...</a>
             <a href="#travelAwards_show" class="show" lang="show"  id="travelAwards_show" style="margin-left:-9999px;">Hide</a>
 
-        <div class="list">
+        <div class="list" lang="list" >
 
         <p>
             The next travel award drawing will be on November 7th.  GSC travel awards are intended to aid students in covering travel expenses related to attending academic conferences, symposia, workshops, etc. Funds are only available to students who will be presenting personal research.
@@ -463,9 +547,9 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
 
 
 
-  <div class='FAQ'>
+  <div class='FAQ' lang="FAQ" >
 
-    <div class="question">
+    <div class="question"lang="question" >
         <p>
           Are you interested in being Pen Pals with a student at Wright Middle Prep School?
         </p>
@@ -474,7 +558,7 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
             <a href="#penPals_hide" class="hide" lang="hide" id="penPals_hide" style="margin-left:-9999px;">Read more...</a>
             <a href="#penPals_show" class="show" lang="show"  id="penPals_show" style="margin-left:-9999px;">Hide</a>
 
-        <div class="list">
+        <div class="list" lang="list" >
 
         <p>
             Sign up with us on Anchor Link <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b86728 ;" href="https://anchorlink.vanderbilt.edu/organization/penpals">here</a>. If you can speak another language or have any questions about the program, please email us at gsc_community@vanderbilt.edu.
@@ -516,9 +600,9 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
 
 
 
-  <div class='FAQ'>
+  <div class='FAQ' lang="FAQ" >
 
-    <div class="question">
+    <div class="question"lang="question" >
         <p>
             BME Graduate Student Association semi-annual volleyball tournament fundraiser.
         </p>
@@ -528,7 +612,7 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
             <a href="#hide1" class="hide" lang="hide" id="hide1">Read more...</a>
             <a href="#show1" class="show" lang="show"  id="show1">Hide</a>
 
-        <div class="list">
+        <div class="list" lang="list" >
             <p>
                 The BME Graduate Student Association would like to invite everyone to the fall edition of our semi-annual volleyball tournament fundraiser! The volleyball tournament will be held on Wyatt Lawn (same location as the event last fall) on Friday, October 21st from 4:00-9 P.M. and will support the BME GSA’s outreach programs at Glencliff High School's Engineering Academy. The tournament format will be 16 teams with up to 5 people/team, best 2 out of 3 games per match. Entry fee is $10/person ($50/team) or 5$/person for non-players paid by cash or credit the day of the tournament. We will be grilling out and providing some food and drinks for all attendees as well as cornhole and frisbee games for those not playing in the tournament, plus great prizes for the tournament champions!
                 To sign up, send an email to vanderbilt.bme.gsa@gmail.com with your team name and roster. Also please RSVP yourself and your team for the event on AnchorLink so we can make sure to provide enough food for everyone. Come out and enjoy meeting other graduate students, food, drinks, and some volleyball all for a great cause!
