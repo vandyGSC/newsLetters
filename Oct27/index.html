@@ -542,6 +542,85 @@ div.preheader {
 .footer__share-button p {
   margin: 0;
 }
+
+
+.FAQ {
+    display : block;
+    margin: 0px 0px 0px 20px;
+    vertical-align: top;
+    height:auto !important;
+}
+.list {
+    display:none;
+    height:auto;
+    margin:0;
+    float: left;
+}
+.show {
+    display: none;
+}
+.hide:target + .show {
+    display: inline;
+}
+.hide:target {
+    display: none;
+}
+.hide:target ~ .list {
+    display:inline;
+}
+
+/*style the (+) and (-) */
+.hide, .show {
+    height: auto;
+    width: 90%;
+    line-height: 20px;
+    /*padding-left: 20px;*/
+    margin-bottom: 25px;
+    margin-top: -17px;
+	border-radius: 30px;
+	text-decoration: none;
+	margin-right: 0;
+	float: left;
+	margin-bottom: 25px;
+    opacity: 80%;
+    font-style:italic;
+}
+
+.hide:hover, .show:hover {
+	/*color: #eee;
+	text-shadow: 0 0 1px #666;*/
+	text-decoration: none;
+	/*box-shadow: 0 0 4px #222 inset;*/
+	opacity: 1;
+	margin-bottom: 25px;
+}
+
+.list p{
+    height:auto;
+    margin:0;
+}
+.question {
+	float: left;
+	height: auto;
+	/*width: 90%;*/
+	line-height: 20px;
+	/*padding-left: 20px;*/
+	margin-bottom: 25px;
+	/*font-style: italic;*/
+}
+
+.imageText {
+  color: white;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1px;
+  /*padding-left: 2px;*/
+}
+
+hr {
+    width: 20%;
+    opacity: 0.4;
+}
 </style>
 
     <title></title>
@@ -581,7 +660,7 @@ body{background-color:#fff}.mso h1{}.mso h1{font-family:Tahoma,sans-serif !impor
       <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
       </div>
       <div class="layout two-col fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 173000px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-        <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #cfa890;background-position: 0px 0px;background-image: url(https://i1.createsend1.com/ei/d/BF/57B/E83/011506/csfinal/e675a3c828a944068fffec7b52fbff53.png);background-repeat: no-repeat;" lang="x-layout__inner">
+        <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #cfa890;background-position: 0px 0px;background-image: url(http://i.imgur.com/AZPJ1xv.png);background-repeat: no-repeat;" lang="x-layout__inner">
         <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0"><tr class="layout-fixed-width" style="background-color: #cfa890;background-position: 0px 0px;background-image: url(https://i1.createsend1.com/ei/d/BF/57B/E83/011506/csfinal/e675a3c828a944068fffec7b52fbff53.png);background-repeat: no-repeat;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
           <div class="column" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);">
 
@@ -590,13 +669,13 @@ body{background-color:#fff}.mso h1{}.mso h1{font-family:Tahoma,sans-serif !impor
     </div>
 
             <div style="Margin-left: 20px;Margin-right: 20px;">
-      <h2 class="size-28" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #58595b;font-size: 24px;line-height: 32px;font-family: Roboto,Tahoma,sans-serif;text-align: center;" lang="x-size-28"><span style="color:#ffffff"><strong>General Body Meeting</strong></span></h2><p style="Margin-top: 16px;Margin-bottom: 20px;text-align: center;"><span style="color:#ffffff"><strong>Alumni Hall room 201<br />
-November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
+      <h2 class="size-28" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #58595b;font-size: 24px;line-height: 32px;font-family: Roboto,Tahoma,sans-serif;text-align: center;" lang="x-size-28"><span class = "imageText" style="color:#ffffff"><strong>Halloween Social!</strong></span></h2><p style="Margin-top: 16px;Margin-bottom: 20px;text-align: center;"><span  class = "imageText"  style="color:#ffffff"><strong>208 24th Ave South<br />
+October 28th 9pm-Midnight<br /> Free food and Drinks*! &#128123; </strong></span></p>
     </div>
 
             <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
       <div class="btn btn--flat btn--large" style="text-align:center;">
-        <![if !mso]><a style="border-radius: 4px;display: inline-block;font-size: 14px;font-weight: bold;line-height: 24px;padding: 12px 24px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #8a5029 !important;background-color: #ffffff;font-family: Avenir, sans-serif;" href="https://studentorg.vanderbilt.edu/gsc/">Check out our website</a><![endif]>
+        <![if !mso]><a style="border-radius: 4px;display: inline-block;font-size: 14px;font-weight: bold;line-height: 24px;padding: 12px 24px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #8a5029 !important;background-color: #ffffff;font-family: Avenir, sans-serif;" href="https://www.youtube.com/watch?v=rS00xWnqwvI">Check out the hype video</a><![endif]>
       <!--[if mso]><p style="line-height:0;margin:0;">&nbsp;</p><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://studentorg.vanderbilt.edu/gsc/" style="width:198px" arcsize="9%" fillcolor="#FFFFFF" stroke="f"><v:textbox style="mso-fit-shape-to-text:t" inset="0px,11px,0px,11px"><center style="font-size:14px;line-height:24px;color:#8A5029;font-family:sans-serif;font-weight:bold;mso-line-height-rule:exactly;mso-text-raise:4px">Check out our website</center></v:textbox></v:roundrect><![endif]--></div>
     </div>
 
@@ -620,59 +699,92 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
       <div style="line-height:20px;font-size:20px;">&nbsp;</div>
 
 
+      <div class="layout one-col email-footer" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 173000px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+        <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;" lang="x-layout__inner">
+        <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0"><tr class="layout-email-footer"><td style="width: 600px;" class="w560"><![endif]-->
+          <div class="column" style="text-align: left;font-size: 12px;line-height: 19px;color: #808285;font-family: Roboto,Tahoma,sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
+            <div style="Margin-left: 30px;Margin-right: 30px;Margin-top: 10px;Margin-bottom: 10px;">
 
+                <p align = "center" style = "font-size: 9px">
+                    * This is a 21+ event, students must bring a student ID and valid ID. All students are allowed 1 guest with valid ID. </br>
 
-      <div class="layout fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 173000px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-        <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;" lang="x-layout__inner" emb-background-style>
-        <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0"><tr class="layout-fixed-width" emb-background-style><td style="width: 200px" valign="top" class="w160"><![endif]-->
-          <!-- <div class="column narrow" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);"> -->
-
-
-
-                               <div class="layout-fixed-width" style="text-align: center;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;">
-                Check out our last <a  style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b86728;" href="https://vandygsc.github.io/newsletters/Oct19/"> Newsletter!</a>
-                </div>
-              
-  <!-- Start list section -->
-              <div class="layout fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 173000px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-                <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;" lang="x-layout__inner" emb-background-style>
-                <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0"><tr class="layout-fixed-width" emb-background-style><td style="width: 200px" valign="top" class="w160"><![endif]-->
-                  <div class="column narrow" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);">
-
-                    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-bottom: 12px;">
-              <h2 class="size-20" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #58595b;font-size: 17px;line-height: 26px;font-family: Roboto,Tahoma,sans-serif;" lang="x-size-20"><strong>Upcoming Events</strong></h2>
+                    If this email is not displaying properly for you
+                    it can be viewed on our <a href = "https://vandygsc.github.io/newsletters/">newsletter site</a>.
+                </p>
             </div>
-
-                  </div>
-                <!--[if (mso)|(IE)]></td><td style="width: 400px" valign="top" class="w360"><![endif]-->
-                  <div class="column wide" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
-
-                    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;">
-              <div style="line-height:5px;font-size:1px">&nbsp;</div>
-            </div>
-
-                    <div style="Margin-left: 20px;Margin-right: 20px;">
-              <p style="Margin-top: 0;Margin-bottom: 0;"><ul>
-          <li>General Body Meeting: Tomorrow! (November 3rd) Free Pizza from 5:45-6PM</li>
-          <li>Care Packages for Launch Pad: Friday (November 4th) between 3 and 5pm in Sarratt 325/327. Come help put together care packages for <a href="http://www.nashvillelaunchpad.com">Launch Pad</a> (Free Pizza!)
-        </ul></p>
-
-                    <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
-              <div style="line-height:12px;font-size:1px">&nbsp;</div>
-            </div>
-
-                <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                </div>
-              </div>
           </div>
-
-  <!-- End list section -->
-
-
-
+        <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+        </div>
+      </div>
 
 
+      <!-- -------------------------------------------------------------------------------------------------------------------- -->
+      <!-- ----------------------------------------       START LISTS         ------------------------------------------------- -->
+      <!-- -------------------------------------------------------------------------------------------------------------------- -->
 
+      <!-- This is the block of code to make a single announcement thingy -->
+
+        <div class="layout fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 173000px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+          <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;" lang="x-layout__inner" emb-background-style>
+          <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0"><tr class="layout-fixed-width" emb-background-style><td style="width: 200px" valign="top" class="w160"><![endif]-->
+
+            <div class="column narrow" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);">
+
+              <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-bottom: 12px;">
+                  <h2 class="size-20" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #58595b;font-size: 17px;line-height: 26px;font-family: Roboto,Tahoma,sans-serif;" lang="x-size-20"><strong>Storytelling Workshop</strong></h2>
+              </div>
+
+            </div>
+          <!--[if (mso)|(IE)]></td><td style="width: 400px" valign="top" class="w360"><![endif]-->
+            <div class="column wide" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
+
+
+
+        <div class='FAQ'>
+
+          <div class="question">
+              <p>
+                Tell your Story: November 2 5:30-8pm (dinner provided,  <a href="https://goo.gl/forms/nukP2nIByXx49XRI2">RSVP</a>)
+              </p>
+          </div>
+      <!--                Make sure you change these V ids to fit each section! -->
+                  <a href="#storyTeller_hide" class="hide" id="storyTeller_hide">Read more...</a>
+                  <a href="#storyTeller_show" class="show" id="storyTeller_show">Hide</a>
+
+              <div class="list">
+
+              <p>
+                  Learn the fundamentals of storytelling to take individual experiences and create compelling stories for any audience. Dinner will be provided. We have limited spots, RSVP <a href="https://goo.gl/forms/nukP2nIByXx49XRI2"> here</a>.
+              </p>
+              <p>
+                  <strong>When:</strong> November 2 5:30-8pm
+              </p>
+              <p>
+                  <strong>Where:</strong> Student Life Center, Ballroom A
+              </p>
+              </div>
+
+        </div>
+
+
+              <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+        <div style="line-height:12px;font-size:1px">&nbsp;</div>
+        </div>
+
+          <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+          </div>
+        </div>
+        </div>
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------       END LISTS         ------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
 
 
       <div style="line-height:50px;font-size:50px;">&nbsp;</div>
@@ -684,13 +796,13 @@ November 3rd 6-7PM<br />(FREE PIZZA &#x1F355; 5:45-6PM)</strong></span></p>
             <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;Margin-bottom: 10px;">
 
 
-            <p align="center"> Follow us on social media!</p>
-            <center>
+            <p align="center"> Follow us on social media!<br>
                 <a href = "https://twitter.com/vandygsc"><img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/gh-pages/logos/twitter_icon.png" alt="Twitter Logo" height="42" width="42"></a>
 
                 <a href = "https://facebook.com/vandygsc"><img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/gh-pages/logos/facebook_icon.png" alt="Facebook Logo" height="42" width="42"></a>
             </p>
-</center>
+            <p align = "center", style = "font-size: 9px">You received this email because you are registered as a graduate student at Vanderbilt University. If you would like to Unsubscribe from GSC emails, <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b86728;" href="https://vanderbilt.collegiatelink.net/involvement/currentmemberships">log into anchorlink</a> and select "Graduate Student Council" and then "Leave Organization".</p>
+
             </div>
           </div>
         <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
