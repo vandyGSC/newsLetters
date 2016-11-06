@@ -183,9 +183,9 @@
       .powered-by a {
         text-decoration: none; }
       hr {
-        border: 0;
-        border-bottom: 1px solid #f6f6f6;
-        Margin: 20px 0; }
+        width: 75%;
+        color: #525252;
+    }
       /* -------------------------------------
           RESPONSIVE AND MOBILE FRIENDLY STYLES
       ------------------------------------- */
@@ -193,13 +193,13 @@
         table[class=body] h1 {
           font-size: 28px !important;
           margin-bottom: 10px !important; }
-        table[class=body] p,
+        /*table[class=body] p,*/
         table[class=body] ul,
         table[class=body] ol,
-        table[class=body] td,
+        /*table[class=body] td,*/
         /*table[class=body] span,*/
-        table[class=body] a {
-          font-size: 16px !important; }
+        /*table[class=body] a {
+          font-size: 16px !important; }*/
         table[class=body] .wrapper,
         table[class=body] .article {
           padding: 10px !important; }
@@ -217,7 +217,7 @@
         table[class=body] .btn a {
           width: 100% !important; }
         table[class=body] .img-responsive {
-          height: auto !important;
+          /*height: auto !important;*/
           max-width: 100% !important;
           width: auto !important; }}
       /* -------------------------------------
@@ -283,6 +283,7 @@
         @media only screen and (max-width: 620px) {
             #photo_text{
                 width:100%;
+                padding:10px;
             }
         }
 
@@ -315,6 +316,7 @@
         #greeting{
             padding-top: 25px;
             font-size: 0.85em;
+            line-height: 1em;
         }
 
         .event_name{
@@ -324,11 +326,14 @@
             color: #525252;
         }
 
-
-        .describer{
+        .details_table td {
+            white-space: nowrap;  /** added **/
             font-weight: bold;
         }
-
+        .details_table td:last-child{
+            width:100%;
+            font-weight: normal;;
+        }
 
     </style>
   </head>
@@ -340,7 +345,7 @@
           <div class="content">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+            <span class="preheader">The Vanderbilt Graduate Student Council Newsletter!</span>
             <table class="main">
 
 
@@ -388,25 +393,32 @@
               </tr>
 
                     <!-- End header photo stuff. Start Body of email -->
-
+                    <tr>
+                      <td align = "center">
+                        <p id = "greeting">
+                            Welcome to the Vanderbilt Graduate Student Council Newsletter. </br>
+                            Trouble viewing this newsletter? View it <a href = "http://vandyGSC.github.io/newsletters">online.</a>
+                        </p>
+                        </td>
+                    </tr>
 
             <!-- ================ Start single event log ================ -->
                   <tr>
                     <td>
-                       <hr>
-                      <span class = "event_name"> Another sick event </span>
+                      <span class = "event_name"> A sweet event </span>
 
                       <p>What do we have here? A description?</p>
 
                       <!-- Details -->
-                      <table>
+                      <table class = "details_table">
                           <tr>
-                              <td class = "describer"> Time: </td> <td> 12:00pm </td>
+                              <td align = "right"> Time: </td> <td> 12:00pm </td>
                           </tr>
                           <tr>
-                              <td class = "describer"> Place: </td> <td> 101 Main Street </td>
+                              <td align = "right"> Place: </td> <td> 101 Main Street </td>
                           </tr>
                       </table>
+                      <hr>
                       </td>
                   </tr>
             <!-- ================ End single event log ================ -->
@@ -415,20 +427,20 @@
             <!-- ================ Start single event log ================ -->
                     <tr>
                       <td>
-                         <hr>
                         <span class = "event_name"> Another sick event </span>
 
-                        <p>What do we have here? A description?</p>
+                        <p>So much description! Keep it short though or people will get bored.</p>
 
                         <!-- Details -->
-                        <table>
+                        <table class = "details_table">
                             <tr>
-                                <td class = "describer"> Time: </td> <td> 12:00pm </td>
+                                <td align = "right"> Time: </td> <td> 12:00pm </td>
                             </tr>
                             <tr>
-                                <td class = "describer"> Place: </td> <td> 101 Main Street </td>
+                                <td align = "right"> Place: </td> <td> 101 Main Street </td>
                             </tr>
                         </table>
+                        <hr>
                         </td>
                     </tr>
             <!-- ================ End single event log ================ -->
