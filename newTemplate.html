@@ -239,6 +239,46 @@
         .btn-primary a:hover {
           background-color: #34495e !important;
           border-color: #34495e !important; } }
+
+/*We can touch the css below here. */
+
+        .main_photo {
+            border-collapse: collapse;
+            display: table;
+            width: 100%;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+        }
+
+        .main_photo span{
+            color: white;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 1px;
+        }
+        .main_photo .main_event{
+            font-weight: bold;
+            font-size: 1.6em;
+        }
+
+        .website_button {
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 24px;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: opacity 0.1s ease-in;
+            color: #8a5029 !important;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .website_button a {
+            text-decoration: none;
+            color: white;
+        }
+
     </style>
   </head>
   <body class="">
@@ -263,11 +303,30 @@
               <tr>
                 <td class="wrapper">
                   <table border="0" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td align="center">
-                            <img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/master/logos/GSCLOGO.png" alt="" width="299" />
-                        </td>
-                      </tr>
+                  <tr>
+                                            <!-- This is where the vanderbilt header logo goes -->
+                    <td align="center">
+                        <img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/master/logos/GSCLOGO.png" alt="" width="299" />
+                    </td>
+
+                  </tr>
+                  <tr>
+                                            <!-- This is where the current email photo goes -->
+                    <td align="center">
+                        <div class="main_photo" style="background-image: url(https://i1.createsend1.com/ei/d/BF/57B/E83/011506/csfinal/e675a3c828a944068fffec7b52fbff53.png);">
+                        <!-- <img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/master/logos/GSCLOGO.png" alt="" width="299" /> -->
+                        <span class = "main_event"> This is the title of the email</span> </br>
+                        </br>
+                        <span class = "event_description"> This is the description of the event</span>
+                        </br>
+
+                        <!-- This is the button to the website (or whatever link we desire) -->
+                        <div class="website_button">
+                          <a href="https://studentorg.vanderbilt.edu/gsc/">Check out our website</a>
+                        </div>
+                    </td>
+
+                  </tr>
                     <tr>
                       <td>
                         <p>Hi there,</p>
