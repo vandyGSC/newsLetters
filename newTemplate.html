@@ -260,11 +260,11 @@
         }
 
         /*Settings for all the text in the main header photo*/
-        .main_photo span{
+        .main_photo p{
             color: white;
             background: rgba(0, 0, 0, 0.4);
-            padding: 1px;
             font-weight: bold;
+            margin-bottom:0px;
         }
 
         /*Settings for just the large main text in header photo*/
@@ -283,7 +283,7 @@
         @media only screen and (max-width: 620px) {
             #photo_text{
                 width:100%;
-                padding:10px;
+                padding:0px;
             }
         }
 
@@ -373,14 +373,10 @@
 
                             <div id = "photo_text">
                                 <!-- What is the main event being announced with this email? -->
-                                <span class = "main_event"> This is the title of the email</span> </br>
-                                </br>
-                                <span class = "event_description"> This is the description of the event</span>
-                                </br>
-                                <span class = "event_description"> This is where the event is</span>
-                                </br>
-                                <span class = "event_description"> This is the time of the event</span>
-                                </br>
+                                <p class = "main_event"> This is the title of the email</p>
+                                <p class = "event_description"> This is the description of the event</p>
+                                <p class = "event_description"> This is where the event is</p>
+                                <p class = "event_description"> This is the time of the event</p>
 
                                 <!-- This is the button to the website (or whatever link we desire) -->
                                 <div class="website_button">
