@@ -13,6 +13,11 @@
         border: none;
         -ms-interpolation-mode: bicubic;
         max-width: 100%; }
+
+
+      body {
+        font-family: Avenir,sans-serif;
+      }
       body {
         background-color: #f6f6f6;
         font-family: Avenir,sans-serif;
@@ -265,9 +270,10 @@
         /*Settings for just the large main text in header photo*/
         .main_photo .main_event{
             font-size: 24px;
+            font-weight: bolder;
         }
 
-        #greeting_text{
+        #photo_text{
             text-align: center;
             width:50%;
             padding:15px;
@@ -275,7 +281,7 @@
 
         /*When the screen is small put the text in the middle of the image*/
         @media only screen and (max-width: 620px) {
-            #greeting_text{
+            #photo_text{
                 width:100%;
             }
         }
@@ -305,9 +311,24 @@
             color: white;
         }
 
-        body {
-            font-family: Avenir,sans-serif;
+        /*Make it so the first line of text doesnt crowd the header image*/
+        #greeting{
+            padding-top: 25px;
+            font-size: 0.85em;
         }
+
+        .event_name{
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            color: #525252;
+        }
+
+
+        .describer{
+            font-weight: bold;
+        }
+
 
     </style>
   </head>
@@ -345,7 +366,7 @@
                     <td>
                         <div class="main_photo" style="background-image: url(https://i1.createsend1.com/ei/d/BF/57B/E83/011506/csfinal/e675a3c828a944068fffec7b52fbff53.png);">
 
-                            <div id = "greeting_text">
+                            <div id = "photo_text">
                                 <!-- What is the main event being announced with this email? -->
                                 <span class = "main_event"> This is the title of the email</span> </br>
                                 </br>
@@ -364,37 +385,54 @@
 
                         </div>
                     </td>
+
+                    <!-- End header photo stuff. Start Body of email -->
+
                   </tr>
+
+
                     <tr>
                       <td>
-                        <p>Hi there,</p>
-                        <p>Sometimes you just want to send a simple HTML email with a simple design and clear call to action. This is it.</p>
-                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
-                          <tbody>
-                            <tr>
-                              <td align="left">
-                                <table border="0" cellpadding="0" cellspacing="0">
-                                  <tbody>
-                                    <tr>
-                                      <td> <a href="http://htmlemail.io" target="_blank">Call To Action</a> </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
-                        <p>Good luck! Hope it works.</p>
+                        <p id = "greeting" align = "center">Welcome to the Vanderbilt Graduate Student Council Newsletter!</p>
                       </td>
                     </tr>
+
+                    <tr>
+                      <td>
+
+                        <span class = "event_name"> This is a sweet event! </span>
+
+                        <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                         <hr>
+                        <span class = "event_name"> Another sick event </span>
+
+                        <p>What do we have here? A description?</p>
+
+                        <!-- Details -->
+                        <table>
+                            <tr>
+                                <td class = "describer"> Time: </td> <td> 12:00pm </td>
+                            </tr>
+                            <tr>
+                                <td class = "describer"> Place: </td> <td> 101 Main Street </td>
+                            </tr>
+                        </table>
+                        </td>
+                    </tr>
+
+
                   </table>
                 </td>
               </tr>
 
 <!-- ==================================================================================================================================================================================== -->
 <!-- ==================================================================================================================================================================================== -->
-<!--                           START MAIN CONTENT AREA -->
+<!--                           END MAIN CONTENT AREA -->
 <!-- ==================================================================================================================================================================================== -->
 <!-- ==================================================================================================================================================================================== -->
               </table>
@@ -405,7 +443,7 @@
                 <tr>
                   <td class="content-block">
                     <span class="apple-link">You are receiving these emails because you are a member of the Vanderbilt Graduate Student Council Group on Anchorlink</span>
-                    <br> Don't like these emails? Go to <a href="https://anchorlink.vanderbilt.edu/">anchorlink</a> and remove yourself from the GSC group or change your email preferences.
+                    Don't like these emails? Go to <a href="https://anchorlink.vanderbilt.edu/">Anchorlink</a> and remove yourself from the GSC group or change your email preferences.
                   </td>
                 </tr>
               </table>
