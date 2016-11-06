@@ -15,7 +15,7 @@
         max-width: 100%; }
       body {
         background-color: #f6f6f6;
-        font-family: sans-serif;
+        font-family: Avenir,sans-serif;
         -webkit-font-smoothing: antialiased;
         font-size: 14px;
         line-height: 1.4;
@@ -29,7 +29,7 @@
         mso-table-rspace: 0pt;
         width: 100%; }
         table td {
-          font-family: sans-serif;
+          font-family: Avenir,sans-serif;
           font-size: 14px;
           vertical-align: top; }
       /* -------------------------------------
@@ -84,7 +84,7 @@
       h3,
       h4 {
         color: #000000;
-        font-family: sans-serif;
+        font-family: Avenir,sans-serif;
         font-weight: 400;
         line-height: 1.4;
         margin: 0;
@@ -97,7 +97,7 @@
       p,
       ul,
       ol {
-        font-family: sans-serif;
+        font-family: Avenir,sans-serif;
         font-size: 14px;
         font-weight: normal;
         margin: 0;
@@ -144,6 +144,7 @@
         background-color: #3498db;
         border-color: #3498db;
         color: #ffffff; }
+
       /* -------------------------------------
           OTHER STYLES THAT MIGHT BE USEFUL
       ------------------------------------- */
@@ -191,7 +192,7 @@
         table[class=body] ul,
         table[class=body] ol,
         table[class=body] td,
-        table[class=body] span,
+        /*table[class=body] span,*/
         table[class=body] a {
           font-size: 16px !important; }
         table[class=body] .wrapper,
@@ -242,24 +243,44 @@
 
 /*We can touch the css below here. */
 
+        /*Settings for the main photo. If you need to customize the height to fit
+        a specific photo you can do that in the height: ... section*/
         .main_photo {
             border-collapse: collapse;
             display: table;
             width: 100%;
             background-position: 0px 0px;
             background-repeat: no-repeat;
+            height: 200px;
         }
 
+        /*Settings for all the text in the main header photo*/
         .main_photo span{
             color: white;
             background: rgba(0, 0, 0, 0.4);
             padding: 1px;
-        }
-        .main_photo .main_event{
             font-weight: bold;
-            font-size: 1.6em;
         }
 
+        /*Settings for just the large main text in header photo*/
+        .main_photo .main_event{
+            font-size: 24px;
+        }
+
+        #greeting_text{
+            text-align: center;
+            width:50%;
+            padding:15px;
+        }
+
+        /*When the screen is small put the text in the middle of the image*/
+        @media only screen and (max-width: 620px) {
+            #greeting_text{
+                width:100%;
+            }
+        }
+
+        /*Settings for the button that links to our site (or david pumpkins video)*/
         .website_button {
             border-radius: 4px;
             display: inline-block;
@@ -271,12 +292,21 @@
             text-decoration: none;
             transition: opacity 0.1s ease-in;
             color: #8a5029 !important;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 25px;
+        }
+
+        .website_button:hover{
+            background-color: rgba(0, 0, 0, 0.75);
         }
 
         .website_button a {
             text-decoration: none;
             color: white;
+        }
+
+        body {
+            font-family: Avenir,sans-serif;
         }
 
     </style>
@@ -312,20 +342,28 @@
                   </tr>
                   <tr>
                                             <!-- This is where the current email photo goes -->
-                    <td align="center">
+                    <td>
                         <div class="main_photo" style="background-image: url(https://i1.createsend1.com/ei/d/BF/57B/E83/011506/csfinal/e675a3c828a944068fffec7b52fbff53.png);">
-                        <!-- <img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/master/logos/GSCLOGO.png" alt="" width="299" /> -->
-                        <span class = "main_event"> This is the title of the email</span> </br>
-                        </br>
-                        <span class = "event_description"> This is the description of the event</span>
-                        </br>
 
-                        <!-- This is the button to the website (or whatever link we desire) -->
-                        <div class="website_button">
-                          <a href="https://studentorg.vanderbilt.edu/gsc/">Check out our website</a>
+                            <div id = "greeting_text">
+                                <!-- What is the main event being announced with this email? -->
+                                <span class = "main_event"> This is the title of the email</span> </br>
+                                </br>
+                                <span class = "event_description"> This is the description of the event</span>
+                                </br>
+                                <span class = "event_description"> This is where the event is</span>
+                                </br>
+                                <span class = "event_description"> This is the time of the event</span>
+                                </br>
+
+                                <!-- This is the button to the website (or whatever link we desire) -->
+                                <div class="website_button">
+                                  <a href="https://studentorg.vanderbilt.edu/gsc/">Check out our website</a>
+                                </div>
+                            </div>
+
                         </div>
                     </td>
-
                   </tr>
                     <tr>
                       <td>
