@@ -1,716 +1,599 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!--[if IE]><html xmlns="http://www.w3.org/1999/xhtml" class="ie"><![endif]--><!--[if !IE]><!--><html style="margin: 0;padding: 0;" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]--><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!--<![endif]-->
-    <meta name="viewport" content="width=device-width" /><style type="text/css">
-@media only screen and (min-width: 620px){* [lang=x-wrapper] h1{}* [lang=x-wrapper] h1{font-size:26px !important;line-height:34px !important}* [lang=x-wrapper] h2{}* [lang=x-wrapper] h2{font-size:20px !important;line-height:28px !important}* [lang=x-wrapper] h3{}* [lang=x-layout__inner] p,* [lang=x-layout__inner] ol,* [lang=x-layout__inner] ul{}* div [lang=x-size-8]{font-size:8px !important;line-height:14px !important}* div [lang=x-size-9]{font-size:9px !important;line-height:16px !important}* div [lang=x-size-10]{font-size:10px !important;line-height:18px !important}* div [lang=x-size-11]{font-size:11px !important;line-height:19px !important}* div [lang=x-size-12]{font-size:12px !important;line-height:19px !important}* div [lang=x-size-13]{font-size:13px !important;line-height:21px !important}* div [lang=x-size-14]{font-size:14px !important;line-height:21px !important}* div
-[lang=x-size-15]{font-size:15px !important;line-height:23px !important}* div [lang=x-size-16]{font-size:16px !important;line-height:24px !important}* div [lang=x-size-17]{font-size:17px !important;line-height:26px !important}* div [lang=x-size-18]{font-size:18px !important;line-height:26px !important}* div [lang=x-size-18]{font-size:18px !important;line-height:26px !important}* div [lang=x-size-20]{font-size:20px !important;line-height:28px !important}* div [lang=x-size-22]{font-size:22px !important;line-height:31px !important}* div [lang=x-size-24]{font-size:24px !important;line-height:32px !important}* div [lang=x-size-26]{font-size:26px !important;line-height:34px !important}* div [lang=x-size-28]{font-size:28px !important;line-height:36px !important}* div [lang=x-size-30]{font-size:30px !important;line-height:38px !important}* div [lang=x-size-32]{font-size:32px
-!important;line-height:40px !important}* div [lang=x-size-34]{font-size:34px !important;line-height:43px !important}* div [lang=x-size-36]{font-size:36px !important;line-height:43px !important}* div [lang=x-size-40]{font-size:40px !important;line-height:47px !important}* div [lang=x-size-44]{font-size:44px !important;line-height:50px !important}* div [lang=x-size-48]{font-size:48px !important;line-height:54px !important}* div [lang=x-size-56]{font-size:56px !important;line-height:60px !important}* div [lang=x-size-64]{font-size:64px !important;line-height:63px !important}}
-</style>
-    <style type="text/css">
-body {
-  margin: 0;
-  padding: 0;
-}
-table {
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-* {
-  line-height: inherit;
-}
-[x-apple-data-detectors],
-[href^="tel"],
-[href^="sms"] {
-  color: inherit !important;
-  text-decoration: none !important;
-}
-.wrapper .footer__share-button a:hover,
-.wrapper .footer__share-button a:focus {
-  color: #ffffff !important;
-}
-.btn a:hover,
-.btn a:focus,
-.footer__share-button a:hover,
-.footer__share-button a:focus,
-.email-footer__links a:hover,
-.email-footer__links a:focus {
-  opacity: 0.8;
-}
-.preheader,
-.header,
-.layout,
-.column {
-  transition: width 0.25s ease-in-out, max-width 0.25s ease-in-out;
-}
-.layout,
-.header {
-  max-width: 400px !important;
-  -fallback-width: 95% !important;
-  width: calc(100% - 20px) !important;
-}
-div.preheader {
-  max-width: 360px !important;
-  -fallback-width: 90% !important;
-  width: calc(100% - 60px) !important;
-}
-.snippet,
-.webversion {
-  Float: none !important;
-}
-.column {
-  max-width: 400px !important;
-  width: 100% !important;
-}
-.fixed-width.has-border {
-  max-width: 402px !important;
-}
-.fixed-width.has-border .layout__inner {
-  box-sizing: border-box;
-}
-.snippet,
-.webversion {
-  width: 50% !important;
-}
-.ie .btn {
-  width: 100%;
-}
-.ie .column,
-[owa] .column,
-.ie .gutter,
-[owa] .gutter {
-  display: table-cell;
-  float: none !important;
-  vertical-align: top;
-}
-.ie div.preheader,
-[owa] div.preheader,
-.ie .email-footer,
-[owa] .email-footer {
-  max-width: 560px !important;
-  width: 560px !important;
-}
-.ie .snippet,
-[owa] .snippet,
-.ie .webversion,
-[owa] .webversion {
-  width: 280px !important;
-}
-.ie .header,
-[owa] .header,
-.ie .layout,
-[owa] .layout,
-.ie .one-col .column,
-[owa] .one-col .column {
-  max-width: 600px !important;
-  width: 600px !important;
-}
-.ie .fixed-width.has-border,
-[owa] .fixed-width.has-border,
-.ie .has-gutter.has-border,
-[owa] .has-gutter.has-border {
-  max-width: 602px !important;
-  width: 602px !important;
-}
-.ie .two-col .column,
-[owa] .two-col .column {
-  width: 300px !important;
-}
-.ie .three-col .column,
-[owa] .three-col .column,
-.ie .narrow,
-[owa] .narrow {
-  width: 200px !important;
-}
-.ie .wide,
-[owa] .wide {
-  width: 400px !important;
-}
-.ie .two-col.has-gutter .column,
-[owa] .two-col.x_has-gutter .column {
-  width: 290px !important;
-}
-.ie .three-col.has-gutter .column,
-[owa] .three-col.x_has-gutter .column,
-.ie .has-gutter .narrow,
-[owa] .has-gutter .narrow {
-  width: 188px !important;
-}
-.ie .has-gutter .wide,
-[owa] .has-gutter .wide {
-  width: 394px !important;
-}
-.ie .two-col.has-gutter.has-border .column,
-[owa] .two-col.x_has-gutter.x_has-border .column {
-  width: 292px !important;
-}
-.ie .three-col.has-gutter.has-border .column,
-[owa] .three-col.x_has-gutter.x_has-border .column,
-.ie .has-gutter.has-border .narrow,
-[owa] .has-gutter.x_has-border .narrow {
-  width: 190px !important;
-}
-.ie .has-gutter.has-border .wide,
-[owa] .has-gutter.x_has-border .wide {
-  width: 396px !important;
-}
-.ie .fixed-width .layout__inner {
-  border-left: 0 none white !important;
-  border-right: 0 none white !important;
-}
-.ie .layout__edges {
-  display: none;
-}
-.mso .layout__edges {
-  font-size: 0;
-}
-.layout-fixed-width,
-.mso .layout-full-width {
-  background-color: #ffffff;
-}
-@media only screen and (min-width: 620px) {
-  .column,
-  .gutter {
-    display: table-cell;
-    Float: none !important;
-    vertical-align: top;
-  }
-  div.preheader,
-  .email-footer {
-    max-width: 560px !important;
-    width: 560px !important;
-  }
-  .snippet,
-  .webversion {
-    width: 280px !important;
-  }
-  .header,
-  .layout,
-  .one-col .column {
-    max-width: 600px !important;
-    width: 600px !important;
-  }
-  .fixed-width.has-border,
-  .fixed-width.ecxhas-border,
-  .has-gutter.has-border,
-  .has-gutter.ecxhas-border {
-    max-width: 602px !important;
-    width: 602px !important;
-  }
-  .two-col .column {
-    width: 300px !important;
-  }
-  .three-col .column,
-  .column.narrow {
-    width: 200px !important;
-  }
-  .column.wide {
-    width: 400px !important;
-  }
-  .two-col.has-gutter .column,
-  .two-col.ecxhas-gutter .column {
-    width: 290px !important;
-  }
-  .three-col.has-gutter .column,
-  .three-col.ecxhas-gutter .column,
-  .has-gutter .narrow {
-    width: 188px !important;
-  }
-  .has-gutter .wide {
-    width: 394px !important;
-  }
-  .two-col.has-gutter.has-border .column,
-  .two-col.ecxhas-gutter.ecxhas-border .column {
-    width: 292px !important;
-  }
-  .three-col.has-gutter.has-border .column,
-  .three-col.ecxhas-gutter.ecxhas-border .column,
-  .has-gutter.has-border .narrow,
-  .has-gutter.ecxhas-border .narrow {
-    width: 190px !important;
-  }
-  .has-gutter.has-border .wide,
-  .has-gutter.ecxhas-border .wide {
-    width: 396px !important;
-  }
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .fblike {
-    background-image: url(https://i3.createsend1.com/static/eb/customise/13-the-blueprint-3/images/fblike@2x.png) !important;
-  }
-  .tweet {
-    background-image: url(https://i4.createsend1.com/static/eb/customise/13-the-blueprint-3/images/tweet@2x.png) !important;
-  }
-  .linkedinshare {
-    background-image: url(https://i6.createsend1.com/static/eb/customise/13-the-blueprint-3/images/lishare@2x.png) !important;
-  }
-  .forwardtoafriend {
-    background-image: url(https://i5.createsend1.com/static/eb/customise/13-the-blueprint-3/images/forward@2x.png) !important;
-  }
-}
-@media (max-width: 321px) {
-  .fixed-width.has-border .layout__inner {
-    border-width: 1px 0 !important;
-  }
-  .layout,
-  .column {
-    min-width: 320px !important;
-    width: 320px !important;
-  }
-  .border {
-    display: none;
-  }
-}
-.mso div {
-  border: 0 none white !important;
-}
-.mso .w560 .divider {
-  Margin-left: 260px !important;
-  Margin-right: 260px !important;
-}
-.mso .w360 .divider {
-  Margin-left: 160px !important;
-  Margin-right: 160px !important;
-}
-.mso .w260 .divider {
-  Margin-left: 110px !important;
-  Margin-right: 110px !important;
-}
-.mso .w160 .divider {
-  Margin-left: 60px !important;
-  Margin-right: 60px !important;
-}
-.mso .w354 .divider {
-  Margin-left: 157px !important;
-  Margin-right: 157px !important;
-}
-.mso .w250 .divider {
-  Margin-left: 105px !important;
-  Margin-right: 105px !important;
-}
-.mso .w148 .divider {
-  Margin-left: 54px !important;
-  Margin-right: 54px !important;
-}
-.mso .font-avenir,
-.mso .font-cabin,
-.mso .font-open-sans,
-.mso .font-ubuntu {
-  font-family: sans-serif !important;
-}
-.mso .font-bitter,
-.mso .font-merriweather,
-.mso .font-pt-serif {
-  font-family: Georgia, serif !important;
-}
-.mso .font-lato,
-.mso .font-roboto {
-  font-family: Tahoma, sans-serif !important;
-}
-.mso .font-pt-sans {
-  font-family: "Trebuchet MS", sans-serif !important;
-}
-.mso .footer__share-button p {
-  margin: 0;
-}
-@media only screen and (min-width: 620px) {
-  .wrapper .size-8 {
-    font-size: 8px !important;
-    line-height: 14px !important;
-  }
-  .wrapper .size-9 {
-    font-size: 9px !important;
-    line-height: 16px !important;
-  }
-  .wrapper .size-10 {
-    font-size: 10px !important;
-    line-height: 18px !important;
-  }
-  .wrapper .size-11 {
-    font-size: 11px !important;
-    line-height: 19px !important;
-  }
-  .wrapper .size-12 {
-    font-size: 12px !important;
-    line-height: 19px !important;
-  }
-  .wrapper .size-13 {
-    font-size: 13px !important;
-    line-height: 21px !important;
-  }
-  .wrapper .size-14 {
-    font-size: 14px !important;
-    line-height: 21px !important;
-  }
-  .wrapper .size-15 {
-    font-size: 15px !important;
-    line-height: 23px !important;
-  }
-  .wrapper .size-16 {
-    font-size: 16px !important;
-    line-height: 24px !important;
-  }
-  .wrapper .size-17 {
-    font-size: 17px !important;
-    line-height: 26px !important;
-  }
-  .wrapper .size-18 {
-    font-size: 18px !important;
-    line-height: 26px !important;
-  }
-  .wrapper .size-20 {
-    font-size: 20px !important;
-    line-height: 28px !important;
-  }
-  .wrapper .size-22 {
-    font-size: 22px !important;
-    line-height: 31px !important;
-  }
-  .wrapper .size-24 {
-    font-size: 24px !important;
-    line-height: 32px !important;
-  }
-  .wrapper .size-26 {
-    font-size: 26px !important;
-    line-height: 34px !important;
-  }
-  .wrapper .size-28 {
-    font-size: 28px !important;
-    line-height: 36px !important;
-  }
-  .wrapper .size-30 {
-    font-size: 30px !important;
-    line-height: 38px !important;
-  }
-  .wrapper .size-32 {
-    font-size: 32px !important;
-    line-height: 40px !important;
-  }
-  .wrapper .size-34 {
-    font-size: 34px !important;
-    line-height: 43px !important;
-  }
-  .wrapper .size-36 {
-    font-size: 36px !important;
-    line-height: 43px !important;
-  }
-  .wrapper .size-40 {
-    font-size: 40px !important;
-    line-height: 47px !important;
-  }
-  .wrapper .size-44 {
-    font-size: 44px !important;
-    line-height: 50px !important;
-  }
-  .wrapper .size-48 {
-    font-size: 48px !important;
-    line-height: 54px !important;
-  }
-  .wrapper .size-56 {
-    font-size: 56px !important;
-    line-height: 60px !important;
-  }
-  .wrapper .size-64 {
-    font-size: 64px !important;
-    line-height: 63px !important;
-  }
-}
-.mso .size-8,
-.ie .size-8 {
-  font-size: 8px !important;
-  line-height: 14px !important;
-}
-.mso .size-9,
-.ie .size-9 {
-  font-size: 9px !important;
-  line-height: 16px !important;
-}
-.mso .size-10,
-.ie .size-10 {
-  font-size: 10px !important;
-  line-height: 18px !important;
-}
-.mso .size-11,
-.ie .size-11 {
-  font-size: 11px !important;
-  line-height: 19px !important;
-}
-.mso .size-12,
-.ie .size-12 {
-  font-size: 12px !important;
-  line-height: 19px !important;
-}
-.mso .size-13,
-.ie .size-13 {
-  font-size: 13px !important;
-  line-height: 21px !important;
-}
-.mso .size-14,
-.ie .size-14 {
-  font-size: 14px !important;
-  line-height: 21px !important;
-}
-.mso .size-15,
-.ie .size-15 {
-  font-size: 15px !important;
-  line-height: 23px !important;
-}
-.mso .size-16,
-.ie .size-16 {
-  font-size: 16px !important;
-  line-height: 24px !important;
-}
-.mso .size-17,
-.ie .size-17 {
-  font-size: 17px !important;
-  line-height: 26px !important;
-}
-.mso .size-18,
-.ie .size-18 {
-  font-size: 18px !important;
-  line-height: 26px !important;
-}
-.mso .size-20,
-.ie .size-20 {
-  font-size: 20px !important;
-  line-height: 28px !important;
-}
-.mso .size-22,
-.ie .size-22 {
-  font-size: 22px !important;
-  line-height: 31px !important;
-}
-.mso .size-24,
-.ie .size-24 {
-  font-size: 24px !important;
-  line-height: 32px !important;
-}
-.mso .size-26,
-.ie .size-26 {
-  font-size: 26px !important;
-  line-height: 34px !important;
-}
-.mso .size-28,
-.ie .size-28 {
-  font-size: 28px !important;
-  line-height: 36px !important;
-}
-.mso .size-30,
-.ie .size-30 {
-  font-size: 30px !important;
-  line-height: 38px !important;
-}
-.mso .size-32,
-.ie .size-32 {
-  font-size: 32px !important;
-  line-height: 40px !important;
-}
-.mso .size-34,
-.ie .size-34 {
-  font-size: 34px !important;
-  line-height: 43px !important;
-}
-.mso .size-36,
-.ie .size-36 {
-  font-size: 36px !important;
-  line-height: 43px !important;
-}
-.mso .size-40,
-.ie .size-40 {
-  font-size: 40px !important;
-  line-height: 47px !important;
-}
-.mso .size-44,
-.ie .size-44 {
-  font-size: 44px !important;
-  line-height: 50px !important;
-}
-.mso .size-48,
-.ie .size-48 {
-  font-size: 48px !important;
-  line-height: 54px !important;
-}
-.mso .size-56,
-.ie .size-56 {
-  font-size: 56px !important;
-  line-height: 60px !important;
-}
-.mso .size-64,
-.ie .size-64 {
-  font-size: 64px !important;
-  line-height: 63px !important;
-}
-.footer__share-button p {
-  margin: 0;
-}
+<!-- This is our new, simplified template. Please work better. -->
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>GSC Newsletter</title>
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; }
 
-.imageText {
-  color: white;
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.4);
-  padding: 1px;
-  /*padding-left: 2px;*/
-}
 
-</style>
+      body {
+        font-family: Avenir,sans-serif;
+      }
+      body {
+        background-color: #f6f6f6;
+        font-family: Avenir,sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; }
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: Avenir,sans-serif;
+          font-size: 14px;
+          vertical-align: top; }
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; }
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        Margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: auto !important;
+        width: 580px; }
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        Margin: 0 auto;
+        max-width: 580px;
+        padding: 10px; }
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #fff;
+        border-radius: 3px;
+        width: 100%; }
+      .wrapper {
+        box-sizing: border-box;
+        padding: 20px; }
+      .footer {
+        clear: both;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%; }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center; }
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: Avenir,sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        Margin-bottom: 30px; }
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; }
+      p,
+      ul,
+      ol {
+        font-family: Avenir,sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        Margin-bottom: 15px; }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; }
+      a {
+        color: #3498db;
+        text-decoration: underline; }
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; }
+      .btn-primary table td {
+        background-color: #3498db; }
+      .btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; }
 
-    <title></title>
-  <!--[if !mso]><!--><style type="text/css">
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic);
-</style><link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic" rel="stylesheet" type="text/css" /><!--<![endif]--><style type="text/css">
-body{background-color:#fff}.mso h1{}.mso h1{font-family:Tahoma,sans-serif !important}.mso h2{}.mso h2{font-family:Tahoma,sans-serif !important}.mso h3{}.mso h3{font-family:Tahoma,sans-serif !important}.mso .column,.mso .column__background td{}.mso .column,.mso .column__background td{font-family:sans-serif !important}.mso .btn a{}.mso .btn a{font-family:sans-serif !important}.mso .webversion,.mso .snippet,.mso .layout-email-footer td,.mso .footer__share-button p{}.mso .webversion,.mso .snippet,.mso .layout-email-footer td,.mso .footer__share-button p{font-family:Tahoma,sans-serif !important}.mso .logo{}.mso .logo{font-family:Tahoma,sans-serif !important}.logo a:hover,.logo a:focus{color:#859bb1 !important}.mso .layout-has-border{border-top:1px solid #ccc;border-bottom:1px solid #ccc}.mso .layout-has-bottom-border{border-bottom:1px solid #ccc}.mso .border,.ie
-.border{background-color:#ccc}@media only screen and (min-width: 620px){.wrapper h1{}.wrapper h1{font-size:26px !important;line-height:34px !important}.wrapper h2{}.wrapper h2{font-size:20px !important;line-height:28px !important}.wrapper h3{}.column p,.column ol,.column ul{}}.mso h1,.ie h1{}.mso h1,.ie h1{font-size:26px !important;line-height:34px !important}.mso h2,.ie h2{}.mso h2,.ie h2{font-size:20px !important;line-height:28px !important}.mso h3,.ie h3{}.mso .layout__inner p,.ie .layout__inner p,.mso .layout__inner ol,.ie .layout__inner ol,.mso .layout__inner ul,.ie .layout__inner ul{}
-</style><meta name="robots" content="noindex,nofollow" />
-<meta property="og:title" content="My First Campaign" />
-</head>
-<!--[if mso]>
-  <body class="mso">
-<![endif]-->
-<!--[if !mso]><!-->
-  <body class="half-padding" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;">
-<!--<![endif]-->
-    <div class="wrapper" style="min-width: 320px;background-color: #fff;" lang="x-wrapper">
-      <div class="preheader" style="Margin: 0 auto;max-width: 560px;min-width: 280px; width: 280px;width: calc(28000% - 173040px);">
-        <div style="border-collapse: collapse;display: table;width: 100%;">
-        <!--[if (mso)|(IE)]><table align="center" class="preheader" cellpadding="0" cellspacing="0"><tr><td style="width: 280px" valign="top"><![endif]-->
-          <div class="snippet" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 140px; width: 140px;width: calc(14000% - 78120px);padding: 10px 0 5px 0;color: #808285;font-family: Roboto,Tahoma,sans-serif;">
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; }
+      .first {
+        margin-top: 0; }
+      .align-center {
+        text-align: center; }
+      .align-right {
+        text-align: right; }
+      .align-left {
+        text-align: left; }
+      .clear {
+        clear: both; }
+      .mt0 {
+        margin-top: 0; }
+      .mb0 {
+        margin-bottom: 0; }
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; }
+      .powered-by a {
+        text-decoration: none; }
+      hr {
+        width: 75%;
+        color: #525252;
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        /*table[class=body] p,*/
+        table[class=body] ul,
+        table[class=body] ol,
+        /*table[class=body] td,*/
+        /*table[class=body] span,*/
+        /*table[class=body] a {
+          font-size: 16px !important; }*/
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; }
+        table[class=body] .content {
+          padding: 0 !important; }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=body] .btn table {
+          width: 100% !important; }
+        table[class=body] .btn a {
+          width: 100% !important; }
+        table[class=body] .img-responsive {
+          /*height: auto !important;*/
+          max-width: 100% !important;
+          width: auto !important; }}
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; } }
 
-          </div>
-        <!--[if (mso)|(IE)]></td><td style="width: 280px" valign="top"><![endif]-->
-          <div class="webversion" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 139px; width: 139px;width: calc(14100% - 78680px);padding: 10px 0 5px 0;text-align: right;color: #808285;font-family: Roboto,Tahoma,sans-serif;">
+/*We can touch the css below here. */
 
-          </div>
-        <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-        </div>
-      </div>
-      <div class="header" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 173000px);" id="emb-email-header-container">
-      <!--[if (mso)|(IE)]><table align="center" class="header" cellpadding="0" cellspacing="0"><tr><td style="width: 600px"><![endif]-->
-        <div class="logo emb-logo-margin-box" style="font-size: 26px;line-height: 32px;Margin-top: 6px;Margin-bottom: 20px;color: #c3ced9;font-family: Roboto,Tahoma,sans-serif;Margin-left: 20px;Margin-right: 20px;" align="center">
-          <div class="logo-center" style="font-size:0px !important;line-height:0 !important;" align="center" id="emb-email-header"><img style="height: auto;width: 100%;border: 0;max-width: 299px;" src="https://raw.githubusercontent.com/LucyMcGowan/GSC/master/logos/GSCLOGO.png" alt="" width="299" /></div>
-        </div>
-      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-      </div>
-      <div class="layout two-col fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 173000px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-        <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #cfa890;background-position: 0px 0px;background-image: url(https://i1.createsend1.com/ei/d/BF/57B/E83/011506/csfinal/e675a3c828a944068fffec7b52fbff53.png);background-repeat: no-repeat;" lang="x-layout__inner">
-        <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0"><tr class="layout-fixed-width" style="background-color: #cfa890;background-position: 0px 0px;background-image: url(https://i1.createsend1.com/ei/d/BF/57B/E83/011506/csfinal/e675a3c828a944068fffec7b52fbff53.png);background-repeat: no-repeat;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
-          <div class="column" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);">
+        /*Settings for the main photo. If you need to customize the height to fit
+        a specific photo you can do that in the height: ... section*/
+        .main_photo {
+            border-collapse: collapse;
+            display: table;
+            width: 100%;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            height: 200px;
+        }
 
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;">
-      <div style="line-height:20px;font-size:1px">&nbsp;</div>
-    </div>
+        /*Settings for all the text in the main header photo*/
+        .main_photo p{
+            color: white;
+            background: rgba(0, 0, 0, 0.4);
+            font-weight: bold;
+            margin-bottom:0px;
+        }
 
-    <div style="Margin-left: 20px;Margin-right: 20px;">
-<h2 class="size-28" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #58595b;font-size: 24px;line-height: 32px;font-family: Roboto,Tahoma,sans-serif;text-align: center;" lang="x-size-28"><span class = "imageText" style="color:#ffffff">
-    <strong>General Body Meeting</strong></span></h2>
-    <p style="Margin-top: 16px;Margin-bottom: 20px;text-align: center;">
-        <span  class = "imageText"  style="color:#ffffff">
-            <strong>Alumni Hall room 201<br />
-             November 3rd 6-7PM<br />
-             (FREE PIZZA &#x1F355; 5:45-6PM) </strong></span></p>
-</div>
+        /*Settings for just the large main text in header photo*/
+        .main_photo .main_event{
+            font-size: 24px;
+            font-weight: bolder;
+        }
 
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
-      <div class="btn btn--flat btn--large" style="text-align:center;">
-        <![if !mso]><a style="border-radius: 4px;display: inline-block;font-size: 14px;font-weight: bold;line-height: 24px;padding: 12px 24px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #8a5029 !important;background-color: #ffffff;font-family: Avenir, sans-serif;" href="https://studentorg.vanderbilt.edu/gsc/">Check out our website</a><![endif]>
-      <!--[if mso]><p style="line-height:0;margin:0;">&nbsp;</p><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://studentorg.vanderbilt.edu/gsc/" style="width:198px" arcsize="9%" fillcolor="#FFFFFF" stroke="f"><v:textbox style="mso-fit-shape-to-text:t" inset="0px,11px,0px,11px"><center style="font-size:14px;line-height:24px;color:#8A5029;font-family:sans-serif;font-weight:bold;mso-line-height-rule:exactly;mso-text-raise:4px">Check out our website</center></v:textbox></v:roundrect><![endif]--></div>
-    </div>
+        #photo_text{
+            text-align: center;
+            width:50%;
+            padding:15px;
+        }
 
-          </div>
-        <!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
-          <!-- <div class="column" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);"> -->
+        /*When the screen is small put the text in the middle of the image*/
+        @media only screen and (max-width: 620px) {
+            #photo_text{
+                width:100%;
+                padding:0px;
+            }
+        }
 
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;">
-      <div style="font-size:1px">&nbsp;</div>
-    </div>
+        /*Settings for the button that links to our site (or david pumpkins video)*/
+        .website_button {
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 24px;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: opacity 0.1s ease-in;
+            color: #8a5029 !important;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 40px;
+        }
 
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
-      <div style="line-height:25px;font-size:1px">&nbsp;</div>
-    </div>
+        .website_button:hover{
+            background-color: rgba(0, 0, 0, 0.75);
+        }
 
-          </div>
-        <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-        </div>
-      </div>
+        .website_button a {
+            text-decoration: none;
+            color: white;
+        }
 
-      <div style="line-height:20px;font-size:20px;">&nbsp;</div>
+        /*Make it so the first line of text doesnt crowd the header image*/
+        #greeting{
+            padding-top: 25px;
+            font-size: 0.85em;
+            line-height: 1em;
+        }
+
+        .event_name{
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            color: #525252;
+        }
+
+        .details_table td {
+            white-space: nowrap;  /** added **/
+            font-weight: bold;
+        }
+        .details_table td:last-child{
+            width:100%;
+            font-weight: normal;;
+        }
+
+        .event_log {
+            padding-bottom: 150px !important;
+        }
+
+    </style>
+  </head>
+  <body class="">
+    <table border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <span class="preheader">The Vanderbilt Graduate Student Council Newsletter!</span>
+            <table class="main">
 
 
 
+<!-- ==================================================================================================================================================================================== -->
+<!-- ==================================================================================================================================================================================== -->
+<!--                           START MAIN CONTENT AREA -->
+<!-- ==================================================================================================================================================================================== -->
+<!-- ==================================================================================================================================================================================== -->
 
-      <div class="layout fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 173000px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-        <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;" lang="x-layout__inner" emb-background-style>
-        <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0"><tr class="layout-fixed-width" emb-background-style><td style="width: 200px" valign="top" class="w160"><![endif]-->
-          <!-- <div class="column narrow" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);"> -->
+              <tr>
+                <td class="wrapper">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                                            <!-- This is where the vanderbilt header logo goes -->
+                    <td align="center">
+                        <img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/master/logos/GSCLOGO.png" alt="" width="299" />
+                    </td>
+
+                  </tr>
+                  <tr>
+                                            <!-- This is where the current email photo goes -->
+                    <td>
+                        <div class="main_photo" style="background-image: url(https://i1.createsend1.com/ei/d/BF/57B/E83/011506/csfinal/e675a3c828a944068fffec7b52fbff53.png);">
+
+                            <div id = "photo_text">
+                                <!-- What is the main event being announced with this email? -->
+                                <p class = "main_event">Happy Hour Friday!</p>
+                                <p class = "event_description">Join the GSC at Sportsmans Grill</p>
+                                <p class = "event_description">This Friday from 5-7pm</p>
+
+                                <!-- This is the button to the website (or whatever link we desire) -->
+                                <div class="website_button">
+                                  <a href="https://studentorg.vanderbilt.edu/gsc/">Check out our website</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </td>
+              </tr>
+
+                    <!-- End header photo stuff. Start Body of email -->
+                    <tr>
+                      <td align = "center">
+                        <p id = "greeting">
+                            Welcome to the Vanderbilt Graduate Student Council Newsletter. 
+                            Trouble viewing this newsletter? View it <a href = "http://vandyGSC.github.io/newsletters">online.</a>
+                        </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p>
+<i>This national election cycle has been a particularly stressful one and members of our community are experiencing a variety of responses to the results. Several offices across campus (including International Student & Scholar Services, Black Cultural Center, & Inclusion Initiatives & Cultural Competence) will be holding gatherings and events today and in the future.  We’d also like to remind you of the campus mental health support resources available:</i>
+<br><br>
+<b>Psychological & Counseling Center</b>: 615-322-2571<br>
+Individual & group therapy, crisis care, psychiatric services, biofeedback
+<br><br>
+<b>Center for Student Wellbeing</b>: 615-322-0480<br>
+Meditation & yoga, individual coaching appointments, workshops, recovery support
+<br><br>
+<b>Let’s Talk</b>: "Let's Talk" is a service that provides easy access to informal confidential consultations with PCC counselors.
+Fall 2016 Hours & Locations:<br>
+Tuesdays: Vanderbilt Law School 043K, 2:30-4:30<br>
+Wednesdays: Saratt 208, 2:30-4:30<br>
+Thursdays: Commons 215, 2:45-4:45<br>
+                      <hr>
+
+						</p>
+                        </td>
+                    </tr>
+            <!-- ================ Start single event log ================ -->
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">Happy Hour</span>
+
+                      <p>This Friday at Sportmans Grille from 5-7pm. Free appetizers! Vanderbilt and valid ID necessary for 21+ activities.
+ 					  </p>
+
+                      <!-- Details -->
+                      <table class = "details_table">
+                          <tr>
+                              <td align = "right"> When: </td> <td> November 11, 5-7pm</td>
+                          </tr>
+                          <tr>
+                              <td align = "right"> Place: </td> <td> Sportsmans Grill, 1601 21st Ave S</td>
+                          </tr>
+                      </table>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+
+ <!-- ================ Start single event log ================ -->
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">General Body Meeting</span>
+
+                      <p>
+                      Join GSC for a General Body Meeting. All Graduate Students are welcome to join to learn about news and upcoming events for Graduate Students (free pizza!).
+					   </p>
+
+                      <!-- Details -->
+                      <table class = "details_table">
+                          <tr>
+                              <td align = "right"> When: </td> <td> December 1, 6-7pm</td>
+                          </tr>
+                          <tr>
+                              <td align = "right"> Place: </td> <td> Alumni Hall 201 </td>
+                          </tr>
+                      </table>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+
+            <!-- ================ Start single event log ================ -->
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">Study Break</span>
+
+                      <p>
+                       Take a break from studying and come hang out with GSC!
+					   </p>
+
+                      <!-- Details -->
+                      <table class = "details_table">
+                          <tr>
+                              <td align = "right"> When: </td> <td> December 7<a href = "https://www.youtube.com/watch?v=rS00xWnqwvI">,</a> 2-4pm</td>
+                          </tr>
+                          <tr>
+                              <td align = "right"> Place: </td> <td> Alumni Hall Lounge (1st floor) </td>
+                          </tr>
+                      </table>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+            <!-- ================ Start single event log ================ -->
+                    <tr class = "event_log">
+                      <td>
+                        <span class = "event_name">Three Minute Thesis</span>
+
+                        <p>Registration will open starting early 2017 and has started
+                            recruiting volunteers. Please contact gsc_academic@vanderbilt.edu
+                            if you are interested in helping plan or volunteer the day of the event.</p>
+                        <hr>
+                        </td>
+                    </tr>
+            <!-- ================ End single event log ================ -->
+
+            <!-- ================ Start single event log ================ -->
+
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">Ombudsman</span>
+
+                      <p>
+                          GSC will be preparing a proposal for the hiring of a
+                          graduate student Ombudsman to submit to the Graduate School.
+                          Stay tuned for updates.
+                      </p>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+
+            <!-- ================ Start single event log ================ -->
+
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">$300,000,000 endowment</span>
+
+                      <p>
+                           Chancellor Zeppos has allocated a $300 million dollar
+                           endowment to Graduate Research and Education as part
+                           of his <a href = "https://news.vanderbilt.edu/2016/08/26/zeppos-shares-vision-for-inclusive-excellence-at-vanderbilt-during-fall-faculty-assembly">vision for inclusive excellence.</a>
+                           GSC has been given the opportunity to organize proposals for the use of these funds.  We plan to send an email out to the entire graduate community with more details soon.
+                      </p>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+
+            <!-- ================ Start single event log ================ -->
+
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">Life Coach</span>
+
+                      <p>
+                           The University hopes to hire a Life Coach for graduate
+                            students within the next few months! The role of the
+                            Life Coach will probably overlap with the career
+                            center and PCC
+                      </p>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
 
 
+            <!-- Leave this stuf here. It just closes the table structure that we are storing the body of the email in.  -->
+                  </table>
+                </td>
+              </tr>
 
-                               <div class="layout-fixed-width" style="text-align: center;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;">
-                Check out our last <a  style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b86728;" href="https://vandygsc.github.io/newsletters/Oct19/"> Newsletter!</a>
-                </div>
+<!-- ==================================================================================================================================================================================== -->
+<!-- ==================================================================================================================================================================================== -->
+<!--                           END MAIN CONTENT AREA -->
+<!-- ==================================================================================================================================================================================== -->
+<!-- ==================================================================================================================================================================================== -->
+              </table>
 
-  <!-- Start list section -->
-              <div class="layout fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 173000px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-                <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;" lang="x-layout__inner" emb-background-style>
-                <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0"><tr class="layout-fixed-width" emb-background-style><td style="width: 200px" valign="top" class="w160"><![endif]-->
-                  <div class="column narrow" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);">
-
-                    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-bottom: 12px;">
-              <h2 class="size-20" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #58595b;font-size: 17px;line-height: 26px;font-family: Roboto,Tahoma,sans-serif;" lang="x-size-20"><strong>Upcoming Events</strong></h2>
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <!-- Our social media links -->
+                  <tr>
+                      <td>
+                         <p> Follow us on social media! </br>
+                             <a href = "https://twitter.com/vandygsc"><img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/gh-pages/logos/twitter_icon.png" alt="Twitter Logo" height="42" width="42"></a>
+                             <a href = "https://facebook.com/vandygsc"><img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/gh-pages/logos/facebook_icon.png" alt="Facebook Logo" height="42" width="42"></a>
+                         </p>
+                      </td>
+                  </tr>
+                <tr>
+                  <td class="content-block">
+                    <span class="apple-link">You are receiving these emails because you are a member of the Vanderbilt Graduate Student Council Group on Anchorlink</span>
+                    Don't like these emails? Go to <a href="https://anchorlink.vanderbilt.edu/">Anchorlink</a> and remove yourself from the GSC group or change your email preferences.
+                  </td>
+                </tr>
+              </table>
             </div>
 
-                  </div>
-                <!--[if (mso)|(IE)]></td><td style="width: 400px" valign="top" class="w360"><![endif]-->
-                  <div class="column wide" style="text-align: left;color: #808285;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
+            <!-- END FOOTER -->
 
-                    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;">
-              <div style="line-height:5px;font-size:1px">&nbsp;</div>
-            </div>
-
-                    <div style="Margin-left: 20px;Margin-right: 20px;">
-              <p style="Margin-top: 0;Margin-bottom: 0;"><ul>
-          <li>General Body Meeting: Tomorrow! (November 3rd) Free Pizza from 5:45-6PM</li>
-          <li>Care Packages for Launch Pad: Friday (November 4th) between 3 and 5pm in Sarratt 325/327. Come help put together care packages for <a href="http://www.nashvillelaunchpad.com">Launch Pad</a> (Free Pizza!)
-        </ul></p>
-
-                    <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
-              <div style="line-height:12px;font-size:1px">&nbsp;</div>
-            </div>
-
-                <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                </div>
-              </div>
-          </div>
-
-  <!-- End list section -->
-
-
-
-
-
-
-
-
-      <div style="line-height:50px;font-size:50px;">&nbsp;</div>
-
-      <div class="layout one-col email-footer" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 173000px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-        <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;" lang="x-layout__inner">
-        <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0"><tr class="layout-email-footer"><td style="width: 600px;" class="w560"><![endif]-->
-          <div class="column" style="text-align: left;font-size: 12px;line-height: 19px;color: #808285;font-family: Roboto,Tahoma,sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;Margin-bottom: 10px;">
-
-
-            <p align="center"> Follow us on social media!</p>
-            <center>
-                <a href = "https://twitter.com/vandygsc"><img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/gh-pages/logos/twitter_icon.png" alt="Twitter Logo" height="42" width="42"></a>
-
-                <a href = "https://facebook.com/vandygsc"><img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/gh-pages/logos/facebook_icon.png" alt="Facebook Logo" height="42" width="42"></a>
-            </p>
-</center>
-            </div>
-          </div>
-        <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-        </div>
-      </div>
-      <div style="line-height:40px;font-size:40px;">&nbsp;</div>
-
-  </div>
-</body></html>
+<!-- END CENTERED WHITE CONTAINER --></div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
