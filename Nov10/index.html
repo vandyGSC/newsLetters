@@ -1,0 +1,599 @@
+<!-- This is our new, simplified template. Please work better. -->
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>GSC Newsletter</title>
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; }
+
+
+      body {
+        font-family: Avenir,sans-serif;
+      }
+      body {
+        background-color: #f6f6f6;
+        font-family: Avenir,sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; }
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: Avenir,sans-serif;
+          font-size: 14px;
+          vertical-align: top; }
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; }
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        Margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: auto !important;
+        width: 580px; }
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        Margin: 0 auto;
+        max-width: 580px;
+        padding: 10px; }
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #fff;
+        border-radius: 3px;
+        width: 100%; }
+      .wrapper {
+        box-sizing: border-box;
+        padding: 20px; }
+      .footer {
+        clear: both;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%; }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center; }
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: Avenir,sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        Margin-bottom: 30px; }
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; }
+      p,
+      ul,
+      ol {
+        font-family: Avenir,sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        Margin-bottom: 15px; }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; }
+      a {
+        color: #3498db;
+        text-decoration: underline; }
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; }
+      .btn-primary table td {
+        background-color: #3498db; }
+      .btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; }
+      .first {
+        margin-top: 0; }
+      .align-center {
+        text-align: center; }
+      .align-right {
+        text-align: right; }
+      .align-left {
+        text-align: left; }
+      .clear {
+        clear: both; }
+      .mt0 {
+        margin-top: 0; }
+      .mb0 {
+        margin-bottom: 0; }
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; }
+      .powered-by a {
+        text-decoration: none; }
+      hr {
+        width: 75%;
+        color: #525252;
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        /*table[class=body] p,*/
+        table[class=body] ul,
+        table[class=body] ol,
+        /*table[class=body] td,*/
+        /*table[class=body] span,*/
+        /*table[class=body] a {
+          font-size: 16px !important; }*/
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; }
+        table[class=body] .content {
+          padding: 0 !important; }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=body] .btn table {
+          width: 100% !important; }
+        table[class=body] .btn a {
+          width: 100% !important; }
+        table[class=body] .img-responsive {
+          /*height: auto !important;*/
+          max-width: 100% !important;
+          width: auto !important; }}
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; } }
+
+/*We can touch the css below here. */
+
+        /*Settings for the main photo. If you need to customize the height to fit
+        a specific photo you can do that in the height: ... section*/
+        .main_photo {
+            border-collapse: collapse;
+            display: table;
+            width: 100%;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            height: 200px;
+        }
+
+        /*Settings for all the text in the main header photo*/
+        .main_photo p{
+            color: white;
+            background: rgba(0, 0, 0, 0.4);
+            font-weight: bold;
+            margin-bottom:0px;
+        }
+
+        /*Settings for just the large main text in header photo*/
+        .main_photo .main_event{
+            font-size: 24px;
+            font-weight: bolder;
+        }
+
+        #photo_text{
+            text-align: center;
+            width:50%;
+            padding:15px;
+        }
+
+        /*When the screen is small put the text in the middle of the image*/
+        @media only screen and (max-width: 620px) {
+            #photo_text{
+                width:100%;
+                padding:0px;
+            }
+        }
+
+        /*Settings for the button that links to our site (or david pumpkins video)*/
+        .website_button {
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 24px;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: opacity 0.1s ease-in;
+            color: #8a5029 !important;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 40px;
+        }
+
+        .website_button:hover{
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+        .website_button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /*Make it so the first line of text doesnt crowd the header image*/
+        #greeting{
+            padding-top: 25px;
+            font-size: 0.85em;
+            line-height: 1em;
+        }
+
+        .event_name{
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            color: #525252;
+        }
+
+        .details_table td {
+            white-space: nowrap;  /** added **/
+            font-weight: bold;
+        }
+        .details_table td:last-child{
+            width:100%;
+            font-weight: normal;;
+        }
+
+        .event_log {
+            padding-bottom: 150px !important;
+        }
+
+    </style>
+  </head>
+  <body class="">
+    <table border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <span class="preheader">The Vanderbilt Graduate Student Council Newsletter!</span>
+            <table class="main">
+
+
+
+<!-- ==================================================================================================================================================================================== -->
+<!-- ==================================================================================================================================================================================== -->
+<!--                           START MAIN CONTENT AREA -->
+<!-- ==================================================================================================================================================================================== -->
+<!-- ==================================================================================================================================================================================== -->
+
+              <tr>
+                <td class="wrapper">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                                            <!-- This is where the vanderbilt header logo goes -->
+                    <td align="center">
+                        <img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/master/logos/GSCLOGO.png" alt="" width="299" />
+                    </td>
+
+                  </tr>
+                  <tr>
+                                            <!-- This is where the current email photo goes -->
+                    <td>
+                        <div class="main_photo" style="background-image: url(https://i1.createsend1.com/ei/d/BF/57B/E83/011506/csfinal/e675a3c828a944068fffec7b52fbff53.png);">
+
+                            <div id = "photo_text">
+                                <!-- What is the main event being announced with this email? -->
+                                <p class = "main_event">Happy Hour Friday!</p>
+                                <p class = "event_description">Join the GSC at Sportsmans Grill</p>
+                                <p class = "event_description">This Friday from 5-7pm</p>
+
+                                <!-- This is the button to the website (or whatever link we desire) -->
+                                <div class="website_button">
+                                  <a href="https://studentorg.vanderbilt.edu/gsc/">Check out our website</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </td>
+              </tr>
+
+                    <!-- End header photo stuff. Start Body of email -->
+                    <tr>
+                      <td align = "center">
+                        <p id = "greeting">
+                            Welcome to the Vanderbilt Graduate Student Council Newsletter. 
+                            Trouble viewing this newsletter? View it <a href = "http://vandyGSC.github.io/newsletters">online.</a>
+                        </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p>
+<i>This national election cycle has been a particularly stressful one and members of our community are experiencing a variety of responses to the results. Several offices across campus (including International Student & Scholar Services, Black Cultural Center, & Inclusion Initiatives & Cultural Competence) will be holding gatherings and events today and in the future.  We’d also like to remind you of the campus mental health support resources available:</i>
+<br><br>
+<b>Psychological & Counseling Center</b>: 615-322-2571<br>
+Individual & group therapy, crisis care, psychiatric services, biofeedback
+<br><br>
+<b>Center for Student Wellbeing</b>: 615-322-0480<br>
+Meditation & yoga, individual coaching appointments, workshops, recovery support
+<br><br>
+<b>Let’s Talk</b>: "Let's Talk" is a service that provides easy access to informal confidential consultations with PCC counselors.
+Fall 2016 Hours & Locations:<br>
+Tuesdays: Vanderbilt Law School 043K, 2:30-4:30<br>
+Wednesdays: Saratt 208, 2:30-4:30<br>
+Thursdays: Commons 215, 2:45-4:45<br>
+                      <hr>
+
+						</p>
+                        </td>
+                    </tr>
+            <!-- ================ Start single event log ================ -->
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">Happy Hour</span>
+
+                      <p>This Friday at Sportmans Grille from 5-7pm. Free appetizers! Vanderbilt and valid ID necessary for 21+ activities.
+ 					  </p>
+
+                      <!-- Details -->
+                      <table class = "details_table">
+                          <tr>
+                              <td align = "right"> When: </td> <td> November 11, 5-7pm</td>
+                          </tr>
+                          <tr>
+                              <td align = "right"> Place: </td> <td> Sportsmans Grill, 1601 21st Ave S</td>
+                          </tr>
+                      </table>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+
+ <!-- ================ Start single event log ================ -->
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">General Body Meeting</span>
+
+                      <p>
+                      Join GSC for a General Body Meeting. All Graduate Students are welcome to join to learn about news and upcoming events for Graduate Students (free pizza!).
+					   </p>
+
+                      <!-- Details -->
+                      <table class = "details_table">
+                          <tr>
+                              <td align = "right"> When: </td> <td> December 1, 6-7pm</td>
+                          </tr>
+                          <tr>
+                              <td align = "right"> Place: </td> <td> Alumni Hall 201 </td>
+                          </tr>
+                      </table>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+
+            <!-- ================ Start single event log ================ -->
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">Study Break</span>
+
+                      <p>
+                       Take a break from studying and come hang out with GSC!
+					   </p>
+
+                      <!-- Details -->
+                      <table class = "details_table">
+                          <tr>
+                              <td align = "right"> When: </td> <td> December 7<a href = "https://www.youtube.com/watch?v=rS00xWnqwvI">,</a> 2-4pm</td>
+                          </tr>
+                          <tr>
+                              <td align = "right"> Place: </td> <td> Alumni Hall Lounge (1st floor) </td>
+                          </tr>
+                      </table>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+            <!-- ================ Start single event log ================ -->
+                    <tr class = "event_log">
+                      <td>
+                        <span class = "event_name">Three Minute Thesis</span>
+
+                        <p>Registration will open starting early 2017 and has started
+                            recruiting volunteers. Please contact gsc_academic@vanderbilt.edu
+                            if you are interested in helping plan or volunteer the day of the event.</p>
+                        <hr>
+                        </td>
+                    </tr>
+            <!-- ================ End single event log ================ -->
+
+            <!-- ================ Start single event log ================ -->
+
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">Ombudsman</span>
+
+                      <p>
+                          GSC will be preparing a proposal for the hiring of a
+                          graduate student Ombudsman to submit to the Graduate School.
+                          Stay tuned for updates.
+                      </p>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+
+            <!-- ================ Start single event log ================ -->
+
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">$300,000,000 endowment</span>
+
+                      <p>
+                           Chancellor Zeppos has allocated a $300 million dollar
+                           endowment to Graduate Research and Education as part
+                           of his <a href = "https://news.vanderbilt.edu/2016/08/26/zeppos-shares-vision-for-inclusive-excellence-at-vanderbilt-during-fall-faculty-assembly">vision for inclusive excellence.</a>
+                           GSC has been given the opportunity to organize proposals for the use of these funds.  We plan to send an email out to the entire graduate community with more details soon.
+                      </p>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+
+            <!-- ================ Start single event log ================ -->
+
+                  <tr class = "event_log">
+                    <td>
+                      <span class = "event_name">Life Coach</span>
+
+                      <p>
+                           The University hopes to hire a Life Coach for graduate
+                            students within the next few months! The role of the
+                            Life Coach will probably overlap with the career
+                            center and PCC
+                      </p>
+                      <hr>
+                      </td>
+                  </tr>
+            <!-- ================ End single event log ================ -->
+
+
+            <!-- Leave this stuf here. It just closes the table structure that we are storing the body of the email in.  -->
+                  </table>
+                </td>
+              </tr>
+
+<!-- ==================================================================================================================================================================================== -->
+<!-- ==================================================================================================================================================================================== -->
+<!--                           END MAIN CONTENT AREA -->
+<!-- ==================================================================================================================================================================================== -->
+<!-- ==================================================================================================================================================================================== -->
+              </table>
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <!-- Our social media links -->
+                  <tr>
+                      <td>
+                         <p> Follow us on social media! </br>
+                             <a href = "https://twitter.com/vandygsc"><img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/gh-pages/logos/twitter_icon.png" alt="Twitter Logo" height="42" width="42"></a>
+                             <a href = "https://facebook.com/vandygsc"><img src="https://raw.githubusercontent.com/LucyMcGowan/GSC/gh-pages/logos/facebook_icon.png" alt="Facebook Logo" height="42" width="42"></a>
+                         </p>
+                      </td>
+                  </tr>
+                <tr>
+                  <td class="content-block">
+                    <span class="apple-link">You are receiving these emails because you are a member of the Vanderbilt Graduate Student Council Group on Anchorlink</span>
+                    Don't like these emails? Go to <a href="https://anchorlink.vanderbilt.edu/">Anchorlink</a> and remove yourself from the GSC group or change your email preferences.
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- END FOOTER -->
+
+<!-- END CENTERED WHITE CONTAINER --></div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
