@@ -470,6 +470,18 @@
                       </td>
                   </tr>
   <!-- ================ End single event log ================ -->
+   <!-- ================ Start single event log ================ -->
+                  <tr class="event_log" style="padding-bottom: 150px !important;">
+                    <td style="font-family: Avenir,sans-serif;font-size: 14px;vertical-align: top;">
+                      <span class="event_name" style="font-size: 20px;font-weight: bold;padding-bottom: 10px;color: #525252;">Community Affairs </span>
+
+                      <p style="font-family: Avenir,sans-serif;font-size: 14px;font-weight: normal;margin: 0;margin-bottom: 15px;">
+                     Community Affairs is looking for graduate students that are interested in participating in the “Pen Pals with a Purpose” program. You can have the opportunity to be a mentor and role model for Nashville area students. The PPWP program, which pairs Vanderbilt graduate students with local middle schoolers, is intended to show middle school students the way in which they can pursue their own interests in higher education and in the workforce. More information will be sent out in a email from GSC Community Affairs this week. <br/>
+					   </p>
+                      <hr style="width: 75%;color: #525252;margin-top: 15px;margin-bottom: 35px;">
+                      </td>
+                  </tr>
+  <!-- ================ End single event log ================ -->
     <!-- ================ Start single event log ================ -->
                   <tr class="event_log" style="padding-bottom: 150px !important;">
                     <td style="font-family: Avenir,sans-serif;font-size: 14px;vertical-align: top;">
