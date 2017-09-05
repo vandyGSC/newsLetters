@@ -400,7 +400,6 @@
                       <td align="center" style="font-family: Avenir,sans-serif;font-size: 14px;vertical-align: top;">
                         <p id="greeting" style="font-family: Avenir,sans-serif;font-size: 0.85em;font-weight: normal;margin: 0;margin-bottom: 15px;padding-top: 25px;line-height: 1em;">
                             Welcome to the Vanderbilt Graduate Student Council Newsletter.
-                            Trouble viewing this newsletter? View it <a href="http://vandyGSC.github.io/newsletters" style="color: #3498db;text-decoration: underline;">online.</a>
                         </p>
                         </td>
                     </tr>
@@ -499,10 +498,10 @@ NOTE: Same set of students serve on both boards. <br/>
   	<!-- ================ Start single event log ================ -->
                   <tr class="event_log" style="padding-bottom: 150px !important;">
                     <td style="font-family: Avenir,sans-serif;font-size: 14px;vertical-align: top;">
-                      <span class="event_name" style="font-size: 20px;font-weight: bold;padding-bottom: 10px;color: #525252;">SOCIAL </span>
+                      <span class="event_name" style="font-size: 20px;font-weight: bold;padding-bottom: 10px;color: #525252;">Upcoming Social Events </span>
 
                       <p style="font-family: Avenir,sans-serif;font-size: 14px;font-weight: normal;margin: 0;margin-bottom: 15px;">
-GSC & PGSA Tailgate
+GSC & PGSA Tailgate:
 Kick-off football season with the joint Graduate Student Council and Peabody Graduate Student Association tailgate! Look for our tent before the first home game against Alabama A&M on September 9th at 12PM.  
 FREE food and drinks!
 Email gsc_social@vanderbilt.edu if you’re interested in volunteering. <br/>
@@ -518,6 +517,18 @@ Email gsc_social@vanderbilt.edu if you’re interested in volunteering. <br/>
 
                       <p style="font-family: Avenir,sans-serif;font-size: 14px;font-weight: normal;margin: 0;margin-bottom: 15px;">
 The Graduate Honor Council is a body of student volunteers tasked with educating the community on the Honor Code and hearing potential violations of the Code. We are looking for volunteers; minimal time commitment required. If interested, email Katie Zimmerman, Chair of the GHC at kathleen.n.zimmerman@vanderbilt.edu. <br/>
+					   </p>
+                      <hr style="width: 75%;color: #525252;margin-top: 15px;margin-bottom: 35px;">
+                      </td>
+                  </tr>
+  <!-- ================ End single event log ================ -->
+  	<!-- ================ Start single event log ================ -->
+                  <tr class="event_log" style="padding-bottom: 150px !important;">
+                    <td style="font-family: Avenir,sans-serif;font-size: 14px;vertical-align: top;">
+                      <span class="event_name" style="font-size: 20px;font-weight: bold;padding-bottom: 10px;color: #525252;">Welcome Reception for New Graduate Students</span>
+
+                      <p style="font-family: Avenir,sans-serif;font-size: 14px;font-weight: normal;margin: 0;margin-bottom: 15px;">
+                     Please mark your calendar for the Welcome Reception for New Graduate School Students taking place Thursday September 7th, from 4-6 pm in Alumni Hall room 100. Immediately following the reception is the 1st Fall Graduate Student Council (GSC) General Body Meeting  at 6 PM in Alumni Hall room 201. <br/>
 					   </p>
                       <hr style="width: 75%;color: #525252;margin-top: 15px;margin-bottom: 35px;">
                       </td>
